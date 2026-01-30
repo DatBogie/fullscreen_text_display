@@ -1,0 +1,12 @@
+jobs:
+  build:
+    runs-on:
+      - macos-14
+      - macos-latest
+      - ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
+      steps:
+        - name: Run build script
+        run: ./build.sh
